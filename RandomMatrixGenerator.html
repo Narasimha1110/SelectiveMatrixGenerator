@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3.js Grid with Unique Colored Rectangular Matrices</title>  <!-- tab name -->
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-container">   <!-- div page-container tag -->
+        <div class="left-part">   <!-- div left-part tag -->
+            <div class="top-part"> <!-- div tag with class name top-part -->
+                <h2> <br></h2>  <!-- printing next line -->
+                <h2><br> </h2>  <!-- printing next line -->
+                <h2><br> </h2>  <!-- printing next line -->
+                <h2> <br></h2>  <!-- printing next line -->
+
+                <h2>RANDOM MATRIX GENERATOR</h2>   <!-- title -->
+                <p>Developed BY: Venkata Narasimha Rao Miryala</p>  <!-- title -->
+
+            </div>
+            <div class="bottom-part">  <!-- bottom part goes here -->
+                <h3>Operational instructions</h3> <!-- paragraph -->
+                <p>This web page generates rectangular matrices in the range of entered value</p> <!-- paragraph -->
+                <p><br> </p>    <!-- printing next line -->
+                <p>Please enter values and click on generate as may times you want, It will generate the submatrices within the range of entered value.</p> <!-- paragraph -->
+                <p>For example if you enter value as 2, It will generate random two sub matrices with in 20x16 matrix on continuous clicking on generate button</p> <!-- paragraph -->
+
+            </div>
+        </div>
+        <div class="right-part">    <!-- right part goes here -->
+            <div class="grid" id="grid-container"></div> <!-- passing grid-container to grid-->
+            <div class="controls"> <!-- div with class asssigned with controls -->
+                <label for="submatrixCount">Enter Maximun limit for number of sub matrices: </label>  <!-- assigning submatrixcount that will take input from user -->
+                <input type="number" id="submatrixCount" min="1" value="1"> <!-- input value of submatrixcount is number -->
+                <button id="generateButton">Generate</button> <!-- generate button -->
+            </div>
+        </div>
+    </div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>  <!-- d3 js-->
+    <script src="script.js"></script>
+</body>
+</html>
